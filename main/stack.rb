@@ -18,7 +18,10 @@ class Stack
         @first.value if !is_empty?
     end
 
-    
+    def is_empty?
+        @first.nil?
+    end
+
     
 end
 
