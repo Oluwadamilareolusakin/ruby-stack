@@ -9,6 +9,11 @@ class Stack
         @first = Node.new(number, @first)
     end
 
+    def popFront
+        raise "Stack is empty" if is_empty?
+        @first = @first.next_node
+    end
+
     
 end
 
