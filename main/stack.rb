@@ -14,6 +14,11 @@ class Stack
         @first = @first.next_node
     end
 
+    def topFront
+        @first.value if !is_empty?
+    end
+
+    
     
 end
 
